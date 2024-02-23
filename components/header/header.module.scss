@@ -1,0 +1,73 @@
+.Header {
+    background-color: var(--bg-second);
+
+    .Content {
+        height: 64px;
+        display: flex;
+        align-items: center;
+        .ToggleButton {
+            $size: 3rem;
+            min-width: $size;
+            height: $size;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            color: var(--fg-second);
+            display: none;
+            svg {
+                $size: 1.5rem;
+                width: $size;
+                height: $size;
+            }
+        }
+        .Drawer {
+            width: 100%;
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .CloseButton {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Header {
+        .Content {
+            .ToggleButton {
+                display: block;
+            }
+            .Drawer {
+                position: fixed;
+                z-index: 100;
+                inset: 0;
+                padding: 2rem;
+                transform: translateX(-100%);
+                background-color: var(--bg-second);
+                transition: transform 120ms ease;
+                ul {
+                    flex-direction: column;
+                    align-items: start;
+                    li {
+                        width: 100%;
+                        a {
+                            width: 100%;
+                            padding: 16px 0;
+                        }
+                    }
+                }
+                .CloseButton {
+                    display: block;
+                    position: absolute;
+                    right: 2rem;
+                }
+                &.Active {
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+}
