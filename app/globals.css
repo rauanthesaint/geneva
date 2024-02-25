@@ -25,6 +25,7 @@ body {
     font-style: normal;
 
     font-size: clamp(1rem, 0.9vw, 1.125rem);
+    text-transform: uppercase;
     scroll-behavior: smooth !important;
 }
 
@@ -36,6 +37,9 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+}
+p {
+    max-width: 1280px;
 }
 a,
 button {

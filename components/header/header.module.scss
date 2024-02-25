@@ -1,6 +1,9 @@
 .Header {
-    background-color: var(--bg-second);
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    width: 100%;
     .Content {
         height: 64px;
         display: flex;

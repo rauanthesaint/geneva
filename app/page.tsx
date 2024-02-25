@@ -1,3 +1,4 @@
+'use client';
 import styles from '@/app/page.module.scss';
 import Section from '@/components/section/Section.component';
 import Container from '@/components/container/Container.component';
@@ -10,11 +11,17 @@ import Almaty from '@/public/static/img/almaty.jpg';
 import HoetlLogo1 from '@/public/static/img/rixos_logo.png';
 import HoetlLogo2 from '@/public/static/img/royal_tulip_logo.png';
 import Events from '@/public/static/img/events.png';
-import Gift from '@/public/static/img/gift.png';
+import Gift from '@/public/static/img/gift.svg';
 import Link from 'next/link';
 import Menu from '@/public/static/img/menu.png';
+import { useState } from 'react';
+import Form from '@/components/form/Form';
 
 export default function Page() {
+    const [active, isActive] = useState<boolean>(false);
+    const toggleForm = () => {
+        isActive(!active);
+    };
     return (
         <main className={styles.Page}>
             <Section className={clsx(styles.beige, styles.Banner)}>
@@ -49,8 +56,14 @@ export default function Page() {
                         <div className={styles.Text}>
                             <p>
                                 You can book the hotel by&nbsp;filling out the
-                                registration form
+                                registration form by&nbsp;clicking this button
                             </p>
+                            <button
+                                onClick={toggleForm}
+                                className={clsx(styles.Button, styles.Primary)}
+                            >
+                                Reservation Form
+                            </button>
                             <p>
                                 A&nbsp;special rate for our guests will
                                 be&nbsp;applicable for check-in starting from
@@ -63,11 +76,6 @@ export default function Page() {
                                 to&nbsp;availability.
                             </p>
 
-                            <button
-                                className={clsx(styles.Button, styles.Primary)}
-                            >
-                                Registration Form
-                            </button>
                             <p>
                                 Otherwise, if&nbsp;you prefer to&nbsp;stay
                                 elsewhere Almaty has other options for
@@ -84,6 +92,8 @@ export default function Page() {
                     </div>
                 </Container>
             </Section>
+
+            {active && <Form close={toggleForm} />}
 
             <Section id="2">
                 <Container className={styles.Flex}>
@@ -110,7 +120,14 @@ export default function Page() {
                         Your presence as&nbsp;our guest is&nbsp;the greatest
                         gift.
                     </p>
-                    <Image alt="Gift" src={Gift} />
+                    <Image
+                        style={{
+                            width: 'min(20vw, 96px)',
+                            height: 'fit-content',
+                        }}
+                        alt="Gift"
+                        src={Gift}
+                    />
                     <p>
                         However, if&nbsp;you would like to&nbsp;give the
                         newlyweds something, you can refer to&nbsp;our gift

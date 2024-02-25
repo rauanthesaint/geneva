@@ -12,14 +12,15 @@
     }
     .Banner {
         position: relative;
+        padding: 8rem 0;
         .BannerImage {
-            width: min(100%, 960px);
+            width: min(90%, 960px);
         }
         .FlowersImage {
             position: absolute;
-            height: 100%;
+            height: 80%;
             width: fit-content;
-            top: 0;
+            bottom: 0;
             right: 0;
         }
     }
@@ -82,8 +83,7 @@
         .Banner {
             padding: 2rem 0;
             .FlowersImage {
-                height: 120%;
-                top: -2rem;
+                height: 100%;
             }
         }
         .Columns {
