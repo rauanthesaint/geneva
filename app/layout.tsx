@@ -1,17 +1,17 @@
-import type { Metadata } from 'next';
-import './globals.css';
-import Header from '@/components/header/Header.component';
-import Footer from '@/components/footer/Footer.component';
+import type { Metadata } from 'next'
+import './globals.css'
+import Header from '@/components/header/Header.component'
+import Footer from '@/components/footer/Footer.component'
 
 export const metadata: Metadata = {
-    title: 'Wedding-DevMode',
+    title: 'Geneva & Aldiar',
     description: 'Description',
-};
+}
 
 export default function RootLayout({
     children,
 }: Readonly<{
-    children: React.ReactNode;
+    children: React.ReactNode
 }>) {
     return (
         <html lang="en">
@@ -21,5 +21,5 @@ export default function RootLayout({
                 <Footer />
             </body>
         </html>
-    );
+    )
 }
