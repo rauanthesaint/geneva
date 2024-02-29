@@ -1,7 +1,7 @@
 export type menu = {
-    title: string;
-    link: string;
-};
+    title: string
+    link: string
+}
 
 export const MenuLinks: menu[] = [
     {
@@ -9,7 +9,7 @@ export const MenuLinks: menu[] = [
         link: '#1',
     },
     {
-        title: 'Events Timeline',
+        title: 'Timeline of Events',
         link: '#2',
     },
     {
@@ -17,7 +17,7 @@ export const MenuLinks: menu[] = [
         link: '#3',
     },
     {
-        title: 'About Almaty',
+        title: 'Information about Almaty',
         link: '#4',
     },
     {
@@ -28,4 +28,4 @@ export const MenuLinks: menu[] = [
         title: 'Wedding Menu',
         link: '#6',
     },
-];
+]

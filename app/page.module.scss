@@ -19,9 +19,6 @@
         }
         .FlowersImage {
             position: absolute;
-            // height: 80%;
-            // width: min-content;
-            // bottom: 0;
             right: 0;
             top: 110px;
             width: 405px;
@@ -121,6 +118,7 @@
 
     #banner_logo {
         width: 88px;
+        margin-top: 80px;
         height: min-content;
     }
 
@@ -147,6 +145,7 @@
     }
     #banner_tie {
         width: 91px;
+        margin-bottom: 20px;
         height: min-content;
     }
 }

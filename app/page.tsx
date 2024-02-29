@@ -3,7 +3,6 @@ import Section from '@/components/section/Section.component'
 import Container from '@/components/container/Container.component'
 import clsx from 'clsx'
 import Image from 'next/image'
-import Logo from '@/public/static/img/logo.svg'
 import Flowers from '@/public/static/img/fowers.png'
 import Hotel from '@/public/static/img/hotel.jpeg'
 import Almaty from '@/public/static/img/almaty.jpg'
@@ -72,11 +71,11 @@ export default function Page() {
             </Section>
             <Section id="1">
                 <Container className={styles.Flex}>
-                    <span className={styles.Heading}>Accomodation</span>
+                    <span className={styles.Heading}>Accommodation</span>
                     <p>
-                        We&nbsp;suggest staying at&nbsp;the Ritz-Carlton Hotel.
-                        You will be&nbsp;able to&nbsp;book the hotel using the
-                        special rate provided for our guests.
+                        We&nbsp;suggest staying at&nbsp;the Ritz-&nbsp;Carlton
+                        Hotel. You will be&nbsp;able to&nbsp;book the hotel
+                        using the special rate provided for our guests.
                     </p>
                     <div className={styles.Columns}>
                         <Image
@@ -137,12 +136,12 @@ export default function Page() {
                             <p>
                                 A&nbsp;special rate for our guests will
                                 be&nbsp;applicable for check-in starting from
-                                June 6th and only after filling out the
+                                June&nbsp;6th and only after filling out the
                                 Reservation form.
                             </p>
                             <p>
                                 Reservations should be&nbsp;made not later than
-                                6th of&nbsp;May, 2024 and are subject
+                                6th&nbsp;of&nbsp;May, 2024 and are subject
                                 to&nbsp;availability.
                             </p>
 
@@ -167,11 +166,11 @@ export default function Page() {
                 <Container className={styles.Flex}>
                     <span className={styles.Heading}>Timeline of Events</span>
                     <p>
-                        The wedding ceremony will begin at&nbsp;17:00. Please
-                        gather at&nbsp;the ballroom entrance area. Following the
-                        outdoor ceremony, the guests will be&nbsp;welcomed
-                        inside for a&nbsp;celebratory dinner, drinks and
-                        dancing.
+                        The wedding ceremony will begin&nbsp;at&nbsp;17:00.
+                        Please gather at&nbsp;the ballroom entrance area.
+                        Following the outdoor ceremony, the guests will
+                        be&nbsp;welcomed inside for a&nbsp;celebratory dinner,
+                        drinks and dancing.
                     </p>
                     <Image
                         style={{ width: '90%', height: 'fit-content' }}
