@@ -5,7 +5,7 @@ export type menu = {
 
 export const MenuLinks: menu[] = [
     {
-        title: 'Accomodation',
+        title: 'Accommodation',
         link: '#1',
     },
     {
