@@ -14,17 +14,55 @@ import Gift from '@/public/static/img/gift.svg'
 import Link from 'next/link'
 import Menu from '@/public/static/img/menu.png'
 
+import BannerLogo from '@/public/static/img/banner_logo.svg'
+import BannerText from '@/public/static/img/banner_start.svg'
+import BannerTitle from '@/public/static/img/banner_title.png'
+import BannerLine from '@/public/static/img/banner_line.svg'
+import BannerDate from '@/public/static/img/banner_date.svg'
+import BannerRSVP from '@/public/static/img/kindly_rsvp.svg'
+import BannerTie from '@/public/static/img/black_tie.svg'
+
 export default function Page() {
     return (
         <main className={styles.Page}>
             <Section className={clsx(styles.beige, styles.Banner)}>
-                <Container className={clsx(styles.centered)}>
+                <Container className={clsx(styles.centered, styles.Flex)}>
                     <Image
-                        className={styles.BannerImage}
-                        width={906}
-                        alt="Banner"
-                        src={Logo}
+                        src={BannerLogo}
+                        alt="Banner Logo"
+                        id={styles.banner_logo}
                     />
+                    <Image
+                        src={BannerText}
+                        alt="Banner Start"
+                        id={styles.banner_start}
+                    />
+                    <Image
+                        alt="Banner Title"
+                        src={BannerTitle}
+                        id={styles.banner_title}
+                    />
+                    <Image
+                        src={BannerLine}
+                        alt="Banner Line"
+                        id={styles.banner_line}
+                    />
+                    <Image
+                        src={BannerDate}
+                        alt="Banner Date"
+                        id={styles.banner_date}
+                    />
+                    <Image
+                        src={BannerRSVP}
+                        alt="Banner Date"
+                        id={styles.banner_rsvp}
+                    />
+                    <Image
+                        src={BannerTie}
+                        alt="Banner Date"
+                        id={styles.banner_tie}
+                    />
+
                     <Image
                         className={styles.FlowersImage}
                         alt="Flowers"

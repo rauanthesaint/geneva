@@ -15,13 +15,17 @@
         padding: 8rem 0;
         .BannerImage {
             width: min(90%, 960px);
+            height: fit-content;
         }
         .FlowersImage {
             position: absolute;
-            height: 80%;
-            width: fit-content;
-            bottom: 0;
+            // height: 80%;
+            // width: min-content;
+            // bottom: 0;
             right: 0;
+            top: 110px;
+            width: 405px;
+            height: min-content;
         }
     }
     .Columns {
@@ -84,8 +88,11 @@
         .Banner {
             padding: 2rem 0;
             .FlowersImage {
-                height: 100%;
+                top: 0;
+                width: 160px;
+                height: min-content;
             }
+            // gap: 1rem;
         }
         .Columns {
             display: flex;
@@ -110,5 +117,36 @@
             gap: 3rem;
             justify-content: center;
         }
+    }
+
+    #banner_logo {
+        width: 88px;
+        height: min-content;
+    }
+
+    #banner_start {
+        width: 251px;
+        height: min-content;
+    }
+
+    #banner_line {
+        width: 74px;
+        height: min-content;
+    }
+    #banner_title {
+        width: 309px;
+        height: min-content;
+    }
+    #banner_date {
+        width: 229px;
+        height: min-content;
+    }
+    #banner_rsvp {
+        width: 80px;
+        height: min-content;
+    }
+    #banner_tie {
+        width: 91px;
+        height: min-content;
     }
 }
