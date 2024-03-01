@@ -80,16 +80,22 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 425px) {
     .Page {
         .Banner {
-            padding: 2rem 0;
+            padding: 1rem 0;
             .FlowersImage {
                 top: 0;
                 width: 160px;
                 height: min-content;
             }
-            // gap: 1rem;
+            .Flex {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 2rem;
+                text-align: center;
+            }
         }
         .Columns {
             display: flex;
@@ -115,7 +121,6 @@
             justify-content: center;
         }
     }
-
     #banner_logo {
         width: 88px;
         margin-top: 80px;
@@ -145,6 +150,160 @@
     }
     #banner_tie {
         width: 91px;
+        margin-bottom: 20px;
+        height: min-content;
+    }
+}
+
+@media screen and (min-width: 426px) {
+    .Page {
+        .Banner {
+            padding: 1rem 0;
+            .FlowersImage {
+                top: 0;
+                width: 274px;
+                height: min-content;
+            }
+            .Flex {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 2rem;
+                text-align: center;
+            }
+            // gap: 1rem;
+        }
+        .Columns {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 3rem;
+
+            .Image {
+                width: 120%;
+                height: fit-content;
+                border-radius: 0;
+            }
+        }
+
+        .Button {
+            width: 100%;
+        }
+
+        .FlexRow {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            justify-content: center;
+        }
+    }
+
+    #banner_logo {
+        width: 69.16px;
+        margin-top: 80px;
+        height: min-content;
+    }
+
+    #banner_start {
+        width: 239.16px;
+        height: min-content;
+    }
+
+    #banner_line {
+        width: 77.64px;
+        height: min-content;
+    }
+    #banner_title {
+        width: 517.59px;
+        height: min-content;
+    }
+    #banner_date {
+        width: 217.96px;
+        height: min-content;
+    }
+    #banner_rsvp {
+        width: 74.76px;
+        height: min-content;
+    }
+    #banner_tie {
+        width: 82.03px;
+        margin-bottom: 20px;
+        height: min-content;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .Page {
+        .Banner {
+            padding: 3rem 0;
+            .FlowersImage {
+                top: 110px;
+                width: 459px;
+                height: min-content;
+            }
+            .Flex {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 4rem;
+                text-align: center;
+            }
+            // gap: 1rem;
+        }
+        .Columns {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 3rem;
+
+            .Image {
+                width: 120%;
+                height: fit-content;
+                border-radius: 0;
+            }
+        }
+
+        .Button {
+            width: 100%;
+        }
+
+        .FlexRow {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            justify-content: center;
+        }
+    }
+
+    #banner_logo {
+        width: 120.25px;
+        margin-top: 80px;
+        height: min-content;
+    }
+
+    #banner_start {
+        width: 415.86px;
+        height: min-content;
+    }
+
+    #banner_line {
+        width: 135px;
+        height: min-content;
+    }
+    #banner_title {
+        width: 900px;
+        height: min-content;
+    }
+    #banner_date {
+        width: 379px;
+        height: min-content;
+    }
+    #banner_rsvp {
+        width: 130px;
+        height: min-content;
+    }
+    #banner_tie {
+        width: 142.64px;
         margin-bottom: 20px;
         height: min-content;
     }
