@@ -311,14 +311,14 @@ export default function Page() {
                 </Container>
             </Section>
 
-            <Section id="6">
+            {/* <Section id="6">
                 <Container className={styles.Flex}>
                     <span className={styles.Heading}>Wedding menu</span>
                     <p>Dietary preferences</p>
                     <Image className={styles.Image} alt="Hotel" src={Menu} />
                     <p style={{ color: '#aaa' }}>In developing</p>
                 </Container>
-            </Section>
+            </Section> */}
         </main>
     )
 }

@@ -15,7 +15,7 @@
         padding: 8rem 0;
         .BannerImage {
             width: min(90%, 960px);
-            height: fit-content;
+            height: max-content;
         }
         .FlowersImage {
             position: absolute;
@@ -37,7 +37,7 @@
         }
         .Image {
             width: min(100%, 600px);
-            height: fit-content;
+            height: min-content;
             border-radius: 8px;
         }
     }
@@ -105,7 +105,7 @@
 
             .Image {
                 width: 120%;
-                height: fit-content;
+                height: min-content;
                 border-radius: 0;
             }
         }
@@ -181,7 +181,7 @@
 
             .Image {
                 width: 120%;
-                height: fit-content;
+                height: min-content;
                 border-radius: 0;
             }
         }
@@ -258,7 +258,7 @@
 
             .Image {
                 width: 120%;
-                height: fit-content;
+                height: max-content;
                 border-radius: 0;
             }
         }
