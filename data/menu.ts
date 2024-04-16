@@ -24,8 +24,8 @@ export const MenuLinks: menu[] = [
         title: 'Getting Here',
         link: '#5',
     },
-    {
-        title: 'Wedding Menu',
-        link: '#6',
-    },
+    // {
+    //     title: 'Wedding Menu',
+    //     link: '#6',
+    // },
 ]
